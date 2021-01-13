@@ -24,6 +24,7 @@ const Cart = () => {
 
   useEffect(() => {
     if (checkoutData) {
+	  debugger;
       const { processCheckout } = checkoutData.data;
       window.location = processCheckout.url;
     }
@@ -62,7 +63,7 @@ const Cart = () => {
         </h4>
       </footer>
       <Button
-        onClick={checkout}
+        onClick={() => checkout}
         disabled={!cart.length || isCheckingOut}
         styles={styles.checkoutButton}
         fullwidth={true}
