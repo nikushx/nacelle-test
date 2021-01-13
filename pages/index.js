@@ -20,6 +20,6 @@ export async function getStaticProps() {
       props: { page }
     };
   } catch (err) {
-    console.error(`Error fetching data on homepage:\n${err}`);
+    console.error(`Error fetching data on page::homepage:\n${err}`);
   }
 }
