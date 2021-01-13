@@ -10,7 +10,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "@babel/plugin-transform-typescript": "7.3.2",
+    "@emotion/babel-plugin": "^11.1.2",
+    "@emotion/babel-preset-css-prop": "^11.0.0",
     "@emotion/core": "^10.0.35",
+    "@emotion/react": "^11.1.4",
     "@nacelle/contentful-preview-connector": "^0.1.5",
     "@nacelle/react-components": "^2.10.1",
     "@nacelle/react-hooks": "^2.10.1",
@@ -22,7 +26,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",
-    "@emotion/babel-preset-css-prop": "^10.0.27",
     "@nacelle/client-js-sdk": "^2.0.2",
     "@nacelle/react-dev-utils": "^2.10.1",
     "eslint": "^7.6.0",
