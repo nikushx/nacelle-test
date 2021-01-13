@@ -13,6 +13,7 @@ export default function Home({ page }) {
 
 export async function getStaticProps() {
   try {
+	// needs homepage made on Contentful to import to Nacelle
     const page = await $nacelle.data.page({ handle: 'homepage' });
 
     return {
