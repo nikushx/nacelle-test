@@ -63,7 +63,7 @@ const Cart = () => {
         </h4>
       </footer>
       <Button
-        onClick={() => checkout}
+        onClick={() => checkout()}
         disabled={!cart.length || isCheckingOut}
         styles={styles.checkoutButton}
         fullwidth={true}
