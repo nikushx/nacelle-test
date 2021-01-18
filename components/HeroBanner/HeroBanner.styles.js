@@ -3,7 +3,8 @@ export const block = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  height: '90vh'
+  height: '90vh',
+  padding: '0 4rem'
 };
 
 export const image = {
