@@ -104,9 +104,6 @@ const Header = ({ space }) => {
 				<span />
 				<span />
 			</Button>
-			<Link href="/">
-				<a css={styles.name}>{space.name}</a>
-			</Link>
 			<MobileNav
 				show={showNav}
 				navItems={navItems}
@@ -114,6 +111,9 @@ const Header = ({ space }) => {
 				title={space.name}
 			/>
 			<DesktopNav navItems={navItems} />
+			<Link href="/">
+				<a css={styles.name}>{space.name}</a>
+			</Link>
 			<div css={styles.buttons}>
 				<SearchBar />
 				<Button

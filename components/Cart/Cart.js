@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useCheckout, useCart } from '@nacelle/react-hooks';
+import { useCart } from '@nacelle/react-hooks';
 import { Button } from '@nacelle/react-components';
 import { formatCurrency } from '@nacelle/react-dev-utils';
 
 import ItemQuantity from 'components/ItemQuantity';
 import useDetectDevice from 'hooks/useDetectDevice';
 import * as styles from './Cart.styles';
+import { useCheckout } from 'hooks/useCheckoutCustom';
 
 const checkoutCredentials = {
   nacelleSpaceId: process.env.NACELLE_SPACE_ID,
@@ -23,10 +24,11 @@ const Cart = () => {
   );
 
   useEffect(() => {
+	console.log(checkoutData);
+	console.log(isCheckingOut);
     if (checkoutData) {
-	  debugger;
       const { processCheckout } = checkoutData.data;
-      window.location = processCheckout.url;
+    //   window.location = processCheckout.url;
     }
   }, [checkoutData]);
 

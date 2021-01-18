@@ -1,7 +1,7 @@
 export const header = {
   display: 'flex',
   alignItems: 'center',
-  height: 75,
+  height: 60,
   paddingLeft: 16,
   paddingRight: 16,
   borderBottom: '1px solid #d3d3d3',
@@ -12,7 +12,9 @@ export const name = {
   textTransform: 'uppercase',
   textDecoration: 'none',
   fontWeight: 'bold',
-  color: '#363636'
+  color: '#363636',
+  width: '30%',
+  textAlign: 'center'
 };
 
 export const nav = {
@@ -20,7 +22,7 @@ export const nav = {
     display: 'none'
   },
   display: 'flex',
-  minWidth: '50vw',
+  width: '35%',
   justifyContent: 'space-around'
 };
 
@@ -69,7 +71,7 @@ export const mobileMenuButton = {
   position: 'relative',
   display: 'block',
   height: 52,
-  width: 52,
+  width: '35%',
   color: '#4a4a4a',
   cursor: 'pointer',
   background: 'transparent',
@@ -77,7 +79,7 @@ export const mobileMenuButton = {
   outline: 0,
   '& span': {
     position: 'absolute',
-    left: 'calc(50% - 8px)',
+    // left: 'calc(50% - 8px)',
     display: 'block',
     backgroundColor: '#4a4a4a',
     height: 2,
@@ -158,5 +160,7 @@ export const mobileNavItems = {
 export const buttons = {
   display: 'flex',
   flexDirection: 'row',
-  alignItems: 'center'
+  alignItems: 'center',
+  width: '35%',
+  justifyContent: 'flex-end'
 };
